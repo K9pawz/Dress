@@ -120,6 +120,21 @@
             <!-- Chips injected by JS -->
           </div>
         </div>
+
+        <!-- ▶ Small video panel inserted directly under "Shop by Theme" (no design changes) -->
+        <div class="panel" style="margin-top:12px">
+          <div style="text-align:left">
+            <iframe width="320" height="180"
+              src="https://www.youtube.com/embed/t0GmWMOSthw"
+              title="K9Pawz Apparel – Quick Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+        <!-- ▲ End video panel -->
+
         <div class="panel" style="margin-top:12px">
           <h3 style="margin:0 0 8px;font-size:16px;color:#fff">How to choose the right fit</h3>
           <p class="sub" style="margin:0">Measure chest girth; if in between sizes, pick the larger size. Lightweight summer mesh for heat, insulated jackets for winter, formal/ethnic fits for celebrations.</p>
@@ -134,7 +149,7 @@
   </div>
 
   <script>
-    // Catalog (from your message) — theme keywords drive filters & SEO
+    // Catalog
     const PRODUCTS = [
       {
         name: "K9Pawz Lehenga – Premium Ethnic Festive Dog Dress (Purple/Gold) S–ML",
@@ -274,41 +289,5 @@
 </body>
 </html>
 
-  <!-- === Non-invasive injector: adds a small YouTube video right under "Shop by Theme" === -->
-  <script>
-    (function () {
-      const YT_SRC = "https://www.youtube.com/embed/t0GmWMOSthw";
-      function findShopByThemeSection() {
-        // 1) Prefer explicit id
-        let el = document.querySelector("#shop-by-theme");
-        if (el) return el;
-        // 2) Look for any section/div with a heading containing "Shop by Theme"
-        const containers = document.querySelectorAll("section, div");
-        for (const c of containers) {
-          const h = c.querySelector("h1, h2, h3, h4, h5, h6");
-          if (h && /shop\s*by\s*theme/i.test(h.textContent || "")) return c;
-        }
-        return null;
-      }
-      function insertVideo(afterEl) {
-        const holder = document.createElement("div");
-        holder.style.marginTop = "20px";
-        holder.style.textAlign = "center";
-        holder.innerHTML =
-          '<iframe width="320" height="180" ' +
-          'src="' + YT_SRC + '" ' +
-          'title="Product Demo Video" frameborder="0" ' +
-          'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ' +
-          'allowfullscreen></iframe>';
-        afterEl.parentNode.insertBefore(holder, afterEl.nextSibling);
-      }
-      document.addEventListener("DOMContentLoaded", function () {
-        const target = findShopByThemeSection();
-        if (target) insertVideo(target);
-      });
-    })();
-  </script>
-</body>
-</html>
 
 
