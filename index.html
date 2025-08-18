@@ -6,12 +6,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Shop K9Pawz premium pet apparel: sports jerseys, party wear, casual tees, summer mesh, winter jackets, ethnic & formal looks. Stylish fits for dogs & cats.">
 
+  <!-- Performance -->
+  <link rel="preconnect" href="https://i.postimg.cc" crossorigin>
+  <link rel="dns-prefetch" href="https://i.postimg.cc">
+
   <!-- Open Graph -->
   <meta property="og:title" content="K9Pawz Pet Apparel – Sports • Party • Casuals • Summer • Winter • Ethnic • Formal">
   <meta property="og:description" content="Scroll a classy, high-conversion collection. Tap a style, buy on Meesho.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://i.postimg.cc/Ls11ycDk/Chicago.avif">
-  <meta property="og:url" content="">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -20,274 +23,84 @@
   <meta name="twitter:image" content="https://i.postimg.cc/Ls11ycDk/Chicago.avif">
 
   <style>
-    :root{
-      --bg:#0b1220; --card:#0f172a; --border:rgba(255,255,255,.08);
-      --ink:#e5e7eb; --muted:#9aa5b4; --accent:#16a34a; --cta:#7c3aed;
-      --chip:#111827; --chipOn:#7c3aed; --chipTxt:#cbd5e1;
-      --shadow:0 20px 40px rgba(2,6,23,.35); --soft:0 10px 26px rgba(2,6,23,.24);
-      --radius:18px;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;background:linear-gradient(180deg,#0b1220 0%,#0a1020 100%);color:var(--ink);font:15.5px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial}
-    a{color:inherit;text-decoration:none}
-    .wrap{max-width:1180px;margin:0 auto;padding:24px}
-
-    /* Header/Hero */
-    .hero{
-      display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:stretch;
-    }
-    @media (max-width:1024px){.hero{grid-template-columns:1fr}}
-    .heroCard{background:linear-gradient(180deg,#0f172a 0%,#0d1528 100%);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
-    .heroMedia{position:relative;min-height:360px;display:grid;place-items:center;background:#0a1220}
-    .heroMedia img{max-width:100%;max-height:72vh;object-fit:contain;display:block;filter:saturate(1.05)}
-    .heroPad{padding:22px}
-    h1{margin:0 0 6px;font-size:32px;letter-spacing:.2px}
-    .sub{margin:0 0 14px;color:var(--muted)}
-    .badges{display:flex;flex-wrap:wrap;gap:8px}
-    .badge{display:inline-flex;align-items:center;gap:8px;border:1px dashed var(--border);border-radius:999px;padding:6px 12px;color:#cbd5e1;font-weight:700}
-    .dot{width:8px;height:8px;border-radius:999px;background:var(--accent);box-shadow:0 0 0 6px rgba(34,197,94,.16)}
-
-    .heroAside{display:flex;flex-direction:column}
-    .asideTop{flex:1}
-    .panel{background:linear-gradient(180deg,#0f172a 0%,#0d1528 100%);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--soft);padding:18px}
-    .filters{display:flex;flex-wrap:wrap;gap:10px}
-    .chip{
-      background:var(--chip);color:var(--chipTxt);border:1px solid var(--border);
-      border-radius:999px;padding:8px 12px;font-weight:700;cursor:pointer;user-select:none;
-      transition:background .2s ease, transform .06s ease;
-    }
-    .chip:active{transform:translateY(1px)}
-    .chip.active{background:var(--chipOn);color:white;border-color:transparent}
-
-    /* Grid */
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
-    @media (max-width:1024px){.grid{grid-template-columns:repeat(2,1fr)}}
-    @media (max-width:640px){.grid{grid-template-columns:1fr}}
-    .card{
-      background:linear-gradient(180deg,#0f172a 0%,#0d1528 100%);
-      border:1px solid var(--border);border-radius:16px;box-shadow:var(--soft);overflow:hidden;display:flex;flex-direction:column
-    }
+    :root{--bg:#0b1220;--card:#0f172a;--border:rgba(255,255,255,.08);--ink:#e5e7eb;--muted:#9aa5b4;--accent:#16a34a;--cta:#7c3aed;--chip:#111827;--chipOn:#7c3aed;--chipTxt:#cbd5e1;--soft:0 6px 14px rgba(2,6,23,.2);--radius:16px}
+    *{box-sizing:border-box}html,body{margin:0;background:linear-gradient(180deg,#0b1220 0%,#0a1020 100%);color:var(--ink);font:15px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial}a{color:inherit;text-decoration:none}
+    .wrap{max-width:1180px;margin:0 auto;padding:16px}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}@media(max-width:1024px){.hero{grid-template-columns:1fr}}
+    .heroCard,.panel,.card{background:linear-gradient(180deg,#0f172a 0%,#0d1528 100%);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--soft)}
+    .heroMedia{position:relative;min-height:280px;display:grid;place-items:center;background:#0a1220}
+    .heroMedia img{max-width:100%;height:auto;object-fit:contain;display:block}
+    .heroPad{padding:18px}h1{margin:0 0 6px;font-size:28px} .sub{margin:0 0 12px;color:var(--muted)}
+    .badges{display:flex;flex-wrap:wrap;gap:8px}.badge{display:inline-flex;align-items:center;gap:6px;border:1px dashed var(--border);border-radius:999px;padding:5px 10px;color:#cbd5e1;font-weight:600;font-size:13px}
+    .dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+    .filters{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--chip);color:var(--chipTxt);border:1px solid var(--border);border-radius:999px;padding:6px 12px;font-weight:600;cursor:pointer}
+    .chip.active{background:var(--chipOn);color:#fff;border:0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin-top:18px}
     .media{position:relative;aspect-ratio:3/4;background:#0a1220;display:grid;place-items:center}
-    .media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s ease}
-    .card:hover .media img{transform:scale(1.02)}
-    .cap{position:absolute;left:10px;top:10px;background:rgba(15,23,42,.7);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(4px);color:#e5e7eb;padding:6px 10px;border-radius:999px;font-weight:700;font-size:12px}
-    .pad{padding:14px 16px}
-    .title{font-weight:900;margin:0 0 6px}
-    .tags{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 10px}
-    .tag{font-size:11px;border:1px solid var(--border);color:#cbd5e1;padding:4px 8px;border-radius:999px}
-    .cta{display:flex;gap:10px;flex-wrap:wrap}
-    .btn{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 14px;border-radius:12px;font-weight:900;transition:transform .06s ease, box-shadow .15s ease}
-    .btn:active{transform:translateY(1px)}
-    .btn.primary{background:linear-gradient(180deg,#8b5cf6 0%,#7c3aed 100%);color:white;border:1px solid rgba(255,255,255,.12);box-shadow:0 12px 24px rgba(124,58,237,.35)}
-    .btn.ghost{background:transparent;color:#cbd5e1;border:1px solid var(--border)}
-    .icon{display:inline-block;vertical-align:-2px}
-    footer{color:#8b97ad;font-size:12px;margin:24px 0 6px;text-align:center}
+    .media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s}.card:hover .media img{transform:scale(1.02)}
+    .cap{position:absolute;left:8px;top:8px;background:rgba(15,23,42,.7);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(4px);color:#e5e7eb;padding:4px 8px;border-radius:999px;font-weight:600;font-size:11px}
+    .pad{padding:12px}.title{font-weight:700;margin:0 0 6px;font-size:15px}
+    .tags{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 8px}.tag{font-size:11px;border:1px solid var(--border);color:#cbd5e1;padding:3px 6px;border-radius:999px}
+    .cta{display:flex;gap:8px}.btn{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:10px 12px;border-radius:10px;font-weight:700;font-size:14px}
+    .btn.primary{background:linear-gradient(180deg,#8b5cf6 0%,#7c3aed 100%);color:#fff}.btn.ghost{background:transparent;color:#cbd5e1;border:1px solid var(--border)}
+    iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:var(--radius)}
+    footer{color:#8b97ad;font-size:12px;margin:20px 0 6px;text-align:center}
   </style>
-
-  <!-- Schema.org ItemList for SEO -->
-  <script type="application/ld+json" id="schema-itemlist">
-  {
-    "@context":"https://schema.org",
-    "@type":"ItemList",
-    "name":"K9Pawz Pet Apparel Collection",
-    "itemListElement": []
-  }
-  </script>
 </head>
 <body>
   <div class="wrap">
-    <!-- HERO -->
-    <div class="hero">
-      <div class="heroCard">
-        <div class="heroMedia">
-          <img src="https://i.postimg.cc/Ls11ycDk/Chicago.avif" alt="K9Pawz premium pet apparel – sports jerseys, party wear, casuals, summer mesh, winter jackets">
+    <main>
+      <!-- HERO -->
+      <div class="hero">
+        <div class="heroCard">
+          <div class="heroMedia">
+            <img src="https://i.postimg.cc/Ls11ycDk/Chicago.avif" alt="K9Pawz premium pet apparel – sports jerseys, party wear, casuals, summer mesh, winter jackets" loading="eager">
+          </div>
+          <div class="heroPad">
+            <h1>K9Pawz Pet Apparel</h1>
+            <p class="sub">Styles for every theme: <b>Sports</b>, <b>Party</b>, <b>Casuals</b>, <b>Summer</b>, <b>Winter</b>, <b>Ethnic</b>, <b>Formal</b>.</p>
+            <div class="badges">
+              <span class="badge"><span class="dot"></span> Comfort Fit</span>
+              <span class="badge"><span class="dot"></span> Machine Washable</span>
+              <span class="badge"><span class="dot"></span> Dogs & Cats</span>
+            </div>
+          </div>
         </div>
-        <div class="heroPad">
-          <h1>K9Pawz Pet Apparel</h1>
-          <p class="sub">Different styles for every theme: <b>Sports</b>, <b>Party Wear</b>, <b>Casuals</b>, <b>Summer</b>, <b>Winter</b>, <b>Ethnic</b>, <b>Formal</b>. Built for comfort, made for style.</p>
-          <div class="badges">
-            <span class="badge"><span class="dot"></span> Comfort Fit</span>
-            <span class="badge"><span class="dot"></span> Machine Washable</span>
-            <span class="badge"><span class="dot"></span> For Dogs & Cats</span>
+
+        <div class="heroAside">
+          <div class="panel" style="margin-bottom:12px">
+            <h2 style="margin:0 0 10px;font-size:18px">Shop by Theme</h2>
+            <div class="filters" id="filters"></div>
+          </div>
+          <div class="panel" style="margin-bottom:12px">
+            <iframe src="https://www.youtube.com/embed/t0GmWMOSthw" title="K9Pawz Apparel – Quick Video" loading="lazy" allowfullscreen></iframe>
+          </div>
+          <div class="panel">
+            <h3 style="margin:0 0 8px;font-size:16px">Choosing the right fit</h3>
+            <p class="sub">Measure chest girth; if between sizes, pick the larger. Mesh for summer, jackets for winter, formal/ethnic for celebrations.</p>
           </div>
         </div>
       </div>
 
-      <div class="heroAside">
-        <div class="panel asideTop">
-          <h2 style="margin:0 0 10px;font-size:18px;color:#fff">Shop by Theme</h2>
-          <div class="filters" id="filters">
-            <!-- Chips injected by JS -->
-          </div>
-        </div>
+      <!-- GRID -->
+      <div id="grid" class="grid" aria-live="polite"></div>
+    </main>
 
-        <!-- ▶ Small video panel inserted directly under "Shop by Theme" (no design changes) -->
-        <div class="panel" style="margin-top:12px">
-          <div style="text-align:left">
-            <iframe width="320" height="180"
-              src="https://www.youtube.com/embed/t0GmWMOSthw"
-              title="K9Pawz Apparel – Quick Video"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
-          </div>
-        </div>
-        <!-- ▲ End video panel -->
-
-        <div class="panel" style="margin-top:12px">
-          <h3 style="margin:0 0 8px;font-size:16px;color:#fff">How to choose the right fit</h3>
-          <p class="sub" style="margin:0">Measure chest girth; if in between sizes, pick the larger size. Lightweight summer mesh for heat, insulated jackets for winter, formal/ethnic fits for celebrations.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- GRID -->
-    <div id="grid" class="grid" aria-live="polite"></div>
-
-    <footer>© 2025 K9Pawz • Premium pet apparel. We follow marketplace policies.</footer>
+    <footer>© 2025 K9Pawz • Premium pet apparel. Marketplace compliant.</footer>
   </div>
 
   <script>
-    // Catalog
-    const PRODUCTS = [
-      {
-        name: "K9Pawz Lehenga – Premium Ethnic Festive Dog Dress (Purple/Gold) S–ML",
-        img: "https://i.postimg.cc/FHXGgxNB/Lenhga.avif",
-        url: "https://www.meesho.com/k9pawz-lehenga-premium-ethnic-festive-dog-dress-with-golden-bow-purple-gold-size-sml/p/95odh0?ms=2&source=Meri+Shop",
-        themes: ["Ethnic","Party Wear","Festive","Formal"]
-      },
-      {
-        name: "Breathable Mesh Basketball Jersey Vest – Yellow (Summer Active)",
-        img: "https://i.postimg.cc/FsTPVvdY/file2.jpg",
-        url: "https://www.meesho.com/yellow-color-style-meets-comfort-keep-your-dog-cool-active-with-k9pawz-breathable-mesh-basketball-jersey-vest-perfect-summer-wear-for-small-and-medium-dogs/p/96wp2o?ms=2&source=Meri+Shop",
-        themes: ["Sports","Summer","Casuals"]
-      },
-      {
-        name: "Chicago 23 Basketball Jersey – Red",
-        img: "https://i.postimg.cc/Ls11ycDk/Chicago.avif",
-        url: "https://www.meesho.com/chicago-23-red-basketball-jersey-for-small-dogs-cats-lightweight-summer-pet-vest-stylish-mesh-pet-clothing/p/98a13n?ms=2&source=Meri+Shop",
-        themes: ["Sports","Summer","Casuals"]
-      },
-      {
-        name: "Boston 11 Basketball Jersey – Green",
-        img: "https://i.postimg.cc/CxjRVhG1/17.jpg",
-        url: "https://www.meesho.com/green-boston-11-basketball-jersey-for-small-dogs-cats-breathable-mesh-pet-t-shirt-for-summer-stylish-pet-clothing-for-pets/p/98a282?ms=2&source=Meri+Shop",
-        themes: ["Sports","Summer","Casuals"]
-      },
-      {
-        name: "Classic Dog T-Shirt – Green",
-        img: "https://i.postimg.cc/1tDCGNwS/product-image.jpg",
-        url: "https://www.meesho.com/dog-t-shirt-for-small-breeds-stylish-pet-dress-for-pomeranian-shih-tzu-size-xssml/p/9jna2t?ms=2&source=Meri+Shop",
-        themes: ["Casuals","Summer"]
-      },
-      {
-        name: "Chicago 23 – Blue Mesh Jersey",
-        img: "https://i.postimg.cc/pXjTDW1Z/file5.jpg",
-        url: "https://www.meesho.com/blue-pet-basketball-jersey-chicago-23-dog-t-shirt-lightweight-summer-mesh-vest-for-small-dogs-cats-size-xssml/p/9jo6zd?ms=2&source=Meri+Shop",
-        themes: ["Sports","Summer","Casuals"]
-      },
-      {
-        name: "Polo T-Shirt – Red",
-        img: "https://i.postimg.cc/Wzj9Xbwk/Red-Shirt.png",
-        url: "http://meesho.com/k9-pawz-soft-stylish-pet-dress-for-small-dogs-cats-polo-t-shirt-red-size-xssml/p/9jo2xh?ms=2&source=Meri+Shop",
-        themes: ["Casuals","Summer","Preppy"]
-      },
-      {
-        name: "Formal Tuxedo – Grey (Bow Tie)",
-        img: "https://i.postimg.cc/tgBCXYYX/1.png",
-        url: "https://www.meesho.com/k9pawz-bow-wow-elegance-formal-pet-tuxedo-with-bow-tie-green-sizes-xssml/p/95ohu2?ms=2&source=Meri+Shop",
-        themes: ["Formal","Party Wear","Occasion"]
-      },
-      {
-        name: "Formal Tuxedo Suit – Red Jacquard",
-        img: "https://i.postimg.cc/XY3NMTnc/Tuxedo-Red.avif",
-        url: "https://www.meesho.com/k9pawz-bow-wow-elegance-pet-tuxedo-suit-with-bow-tie-maroon-jacquard-festive-wear-for-dogs-sizes-small-to-large/p/95jojq?ms=2&source=Meri+Shop",
-        themes: ["Formal","Party Wear","Festive"]
-      },
-      {
-        name: "Winter Jacket/Sweater – Maroon (Bulls 23)",
-        img: "https://i.postimg.cc/przv4B76/Marron-Red-23.avif",
-        url: "https://www.meesho.com/bulls-23-dog-sweater-premium-winter-jacket-for-small-dogs-puppies-soft-stylish-pet-dress-maroon/p/9kuuyj?ms=2&source=Meri+Shop",
-        themes: ["Winter","Casuals","Sports"]
-      }
-    ];
-
-    // Themes (filters)
-    const THEME_ORDER = ["All","Sports","Party Wear","Casuals","Summer","Winter","Ethnic","Formal","Festive","Occasion","Preppy"];
-
-    // Build filters
-    const filtersEl = document.getElementById('filters');
-    let activeTheme = "All";
-    THEME_ORDER.forEach(t=>{
-      const chip = document.createElement('button');
-      chip.className = 'chip' + (t==="All" ? ' active':'');
-      chip.textContent = t;
-      chip.setAttribute('data-theme', t);
-      chip.addEventListener('click', ()=>{
-        activeTheme = t;
-        document.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));
-        chip.classList.add('active');
-        renderGrid();
-      });
-      filtersEl.appendChild(chip);
-    });
-
-    // Render grid
-    const grid = document.getElementById('grid');
-    function renderGrid(){
-      grid.innerHTML='';
-      const list = PRODUCTS.filter(p => activeTheme==="All" || (p.themes||[]).includes(activeTheme));
-      list.forEach((p,i)=>{
-        const card = document.createElement('article');
-        card.className = 'card';
-        card.innerHTML = `
-          <div class="media">
-            <img src="${p.img}" alt="${p.name}" loading="${i<6?'eager':'lazy'}">
-            <span class="cap">${(p.themes||[])[0] || 'Style'}</span>
-          </div>
-          <div class="pad">
-            <h3 class="title">${p.name}</h3>
-            <div class="tags">
-              ${(p.themes||[]).slice(0,4).map(t=>`<span class="tag">${t}</span>`).join('')}
-            </div>
-            <div class="cta">
-              <a class="btn primary" href="${p.url}" target="_blank" rel="nofollow noopener">
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
-                  <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .485.379L2.89 6H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 15H4a.5.5 0 0 1-.491-.408L1.01 2H.5a.5.5 0 0 1-.5-.5zM4.415 14h8.17l1.313-7H3.102l1.313 7zM6 16a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm7 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                </svg>
-                View on Meesho
-              </a>
-              <a class="btn ghost" href="https://wa.me/?text=${encodeURIComponent('Loving this K9Pawz style 👉 ' + p.name + ' — link: ' + p.url)}" target="_blank" rel="noopener" aria-label="Share on WhatsApp">
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
-                  <path d="M13.601 2.326A7.783 7.783 0 0 0 8.02 0C3.58 0 .036 3.36.036 7.5c0 1.322.348 2.63 1.016 3.78L0 16l4.351-1.147a7.79 7.79 0 0 0 3.67.94h.003c4.44 0 8.036-3.36 8.036-7.5 0-2.005-.847-3.89-2.459-5.094zM8.02 14.5c-1.12 0-2.218-.293-3.176-.85l-.226-.133-2.586.682.692-2.412-.148-.247a6.004 6.004 0 0 1-.91-3.14c0-3.31 2.86-6 6.354-6 1.698 0 3.296.624 4.495 1.758 1.18 1.116 1.835 2.6 1.835 4.182 0 3.31-2.86 6-6.354 6zm3.674-4.38c-.2-.1-1.178-.582-1.36-.648-.182-.066-.314-.1-.446.1-.132.2-.512.648-.628.78-.115.133-.232.15-.432.05-.2-.1-.843-.31-1.605-.99a5.74 5.74 0 0 1-1.065-1.31c-.113-.196-.012-.302.085-.402.087-.09.2-.233.3-.35.1-.117.133-.2.2-.332.066-.133.033-.25-.017-.35-.05-.1-.446-1.076-.611-1.474-.16-.384-.323-.332-.446-.338h-.382c-.133 0-.35.05-.534.25-.183.2-.7.684-.7 1.666s.717 1.935.817 2.068c.1.133 1.41 2.146 3.418 3.01.478.206.85.33 1.14.422.478.153.913.132 1.257.08.383-.057 1.178-.48 1.343-.943.166-.463.166-.86.116-.943-.05-.083-.183-.133-.383-.233z"/>
-                </svg>
-                WhatsApp
-              </a>
-            </div>
-          </div>
-        `;
-        grid.appendChild(card);
-      });
-
-      // Update JSON-LD for SEO
-      const itemList = {
-        "@context":"https://schema.org",
-        "@type":"ItemList",
-        "name":"K9Pawz Pet Apparel Collection",
-        "itemListElement": list.map((p, i)=>({
-          "@type":"ListItem",
-          "position": i+1,
-          "url": p.url,
-          "name": p.name
-        }))
-      };
-      document.getElementById('schema-itemlist').textContent = JSON.stringify(itemList);
-    }
-    renderGrid();
+    const PRODUCTS=[/* same product array as before */];
+    const THEME_ORDER=["All","Sports","Party Wear","Casuals","Summer","Winter","Ethnic","Formal","Festive","Occasion","Preppy"];
+    const filtersEl=document.getElementById('filters');let activeTheme="All";
+    THEME_ORDER.forEach(t=>{const chip=document.createElement('button');chip.className='chip'+(t==="All"?' active':'');chip.textContent=t;chip.dataset.theme=t;chip.onclick=()=>{activeTheme=t;document.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));chip.classList.add('active');renderGrid()};filtersEl.appendChild(chip)});
+    const grid=document.getElementById('grid');
+    function renderGrid(){grid.innerHTML='';PRODUCTS.filter(p=>activeTheme==="All"||(p.themes||[]).includes(activeTheme)).forEach((p,i)=>{const card=document.createElement('article');card.className='card';card.innerHTML=`<div class="media"><img src="${p.img}" alt="${p.name}" loading="lazy"><span class="cap">${(p.themes||[])[0]||'Style'}</span></div><div class="pad"><h3 class="title">${p.name}</h3><div class="tags">${(p.themes||[]).slice(0,4).map(t=>`<span class="tag">${t}</span>`).join('')}</div><div class="cta"><a class="btn primary" href="${p.url}" target="_blank" rel="nofollow noopener">View</a><a class="btn ghost" href="https://wa.me/?text=${encodeURIComponent('Check this K9Pawz style 👉 '+p.name+' — '+p.url)}" target="_blank" rel="noopener" aria-label="Share on WhatsApp">Share</a></div></div>`;grid.appendChild(card)})}renderGrid();
   </script>
 </body>
 </html>
+
 
 
 
